@@ -1,0 +1,15 @@
+query GetFightProgDataByEncounterID($userID: Int, $encounterID: Int) {
+	reportData {
+		reports(userID: $userID) {
+			data {
+				title
+				fights(encounterID: $encounterID) {
+			  		startTime
+					endTime
+					fightPercentage
+					lastPhaseAsAbsoluteIndex
+				}
+			}
+		}
+	}
+}

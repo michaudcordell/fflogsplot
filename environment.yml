@@ -1,0 +1,15 @@
+name: fflogsplot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - matplotlib
+  - seaborn
+  - pandas
+  - scipy
+  - numpy
+  - scikit-learn
+  - python-dotenv
+  - gql
+  - aiohttp
